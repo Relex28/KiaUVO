@@ -34,7 +34,7 @@ HeadersPinRequest = {'Content-type': 'application/json;charset=UTF-8',
 
 print(HeadersPinRequest)
 # Send request
-PinData = '{"pin":"5027","deviceId":"DEVICE-ID-HERE"}'
+PinData = '{"pin":"PIN-CODE-HERE","deviceId":"DEVICE-ID-HERE"}'
 
 UvoPinRequest = requests.put('https://prd.eu-ccapi.kia.com:8080/api/v1/user/pin', data=PinData, headers=HeadersPinRequest)
 
